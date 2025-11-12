@@ -18,11 +18,11 @@ spec:
       labels:
         app: gateway
     spec:
-      containers:
+      containers: 
         - name: gateway
           image: augustus/gateway:latest
           envFrom:
             - configMapRef:
-              name: gateway-configmap
+                name: gateway-configmap
             - secretRef:
-              name: gateway-secret
+                name: gateway-secret
